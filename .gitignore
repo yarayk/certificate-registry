@@ -1,0 +1,11 @@
+node_modules/
+artifacts/
+cache/
+generated/
+types/ethers-contracts/
+.next/
+*.tsbuildinfo
+.yarn/install-state.gz
+*.log
+.env*
+

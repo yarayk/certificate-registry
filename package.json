@@ -1,0 +1,29 @@
+{
+  "name": "se-2",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/hardhat",
+      "packages/nextjs"
+    ]
+  },
+  "scripts": {
+    "types": "yarn workspace @se-2/hardhat check-types && yarn workspace @se-2/nextjs check-types",
+    "deploy": "yarn workspace @se-2/hardhat deploy",
+    "chain": "yarn workspace @se-2/hardhat chain",
+    "test": "yarn workspace @se-2/hardhat test",
+    "start": "yarn workspace @se-2/nextjs start"
+  },
+  "packageManager": "yarn@4.18.1",
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0"
+  },
+  "resolutions": {
+    "@coinbase/cdp-sdk": "1.52.0"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  }
+}

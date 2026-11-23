@@ -1,0 +1,173 @@
+{
+  "address": "0x4a679253410272dd5232b3ff7cf5dbb88f295319",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "fileHash",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "enum CertificateRegistry.Status",
+          "name": "newStatus",
+          "type": "uint8"
+        }
+      ],
+      "name": "CertificateStatusChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "fileHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "getStatus",
+      "outputs": [
+        {
+          "internalType": "enum CertificateRegistry.Status",
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "fileHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "issueCertificate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "fileHash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "revokeCertificate",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "teacher",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "contractName": "CertificateRegistry",
+  "sourceName": "contracts/CertificateRegistry.sol",
+  "bytecode": "0x60a0604052336080523480156012575f5ffd5b506080516103f76100375f395f818160a00152818160f8015261025b01526103f75ff3fe608060405234801561000f575f5ffd5b506004361061004a575f3560e01c80635de28ae01461004e578063a1f8182414610086578063b46bff891461009b578063c6cbc52a146100da575b5f5ffd5b61007061005c366004610370565b5f9081526020819052604090205460ff1690565b60405161007d919061039b565b60405180910390f35b610099610094366004610370565b6100ed565b005b6100c27f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b03909116815260200161007d565b6100996100e8366004610370565b610250565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146101595760405162461bcd60e51b815260206004820152600c60248201526b27b7363c903a32b0b1b432b960a11b60448201526064015b60405180910390fd5b806101925760405162461bcd60e51b81526020600482015260096024820152680b4cae4de40d0c2e6d60bb1b6044820152606401610150565b5f8181526020819052604081205460ff1660028111156101b4576101b4610387565b146101f65760405162461bcd60e51b8152602060048201526012602482015271105b1c9958591e481c9959da5cdd195c995960721b6044820152606401610150565b5f81815260208190526040902080546001919060ff191682800217905550807f33194025c8a6c136730aa3605b006a0e3ae718d032e427d6e8beace8d9c74a4a6001604051610245919061039b565b60405180910390a250565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146102b75760405162461bcd60e51b815260206004820152600c60248201526b27b7363c903a32b0b1b432b960a11b6044820152606401610150565b60015f8281526020819052604090205460ff1660028111156102db576102db610387565b146103205760405162461bcd60e51b815260206004820152601560248201527410d95c9d1a599a58d85d19481b9bdd081d985b1a59605a1b6044820152606401610150565b5f81815260208190526040902080546002919060ff19166001830217905550807f33194025c8a6c136730aa3605b006a0e3ae718d032e427d6e8beace8d9c74a4a6002604051610245919061039b565b5f60208284031215610380575f5ffd5b5035919050565b634e487b7160e01b5f52602160045260245ffd5b60208101600383106103bb57634e487b7160e01b5f52602160045260245ffd5b9190529056fea26469706673582212201f50036858bf0472031774f23d635ec57501c509166037936c68fe61231c907864736f6c634300081e0033",
+  "deployedBytecode": "0x608060405234801561000f575f5ffd5b506004361061004a575f3560e01c80635de28ae01461004e578063a1f8182414610086578063b46bff891461009b578063c6cbc52a146100da575b5f5ffd5b61007061005c366004610370565b5f9081526020819052604090205460ff1690565b60405161007d919061039b565b60405180910390f35b610099610094366004610370565b6100ed565b005b6100c27f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b03909116815260200161007d565b6100996100e8366004610370565b610250565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146101595760405162461bcd60e51b815260206004820152600c60248201526b27b7363c903a32b0b1b432b960a11b60448201526064015b60405180910390fd5b806101925760405162461bcd60e51b81526020600482015260096024820152680b4cae4de40d0c2e6d60bb1b6044820152606401610150565b5f8181526020819052604081205460ff1660028111156101b4576101b4610387565b146101f65760405162461bcd60e51b8152602060048201526012602482015271105b1c9958591e481c9959da5cdd195c995960721b6044820152606401610150565b5f81815260208190526040902080546001919060ff191682800217905550807f33194025c8a6c136730aa3605b006a0e3ae718d032e427d6e8beace8d9c74a4a6001604051610245919061039b565b60405180910390a250565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146102b75760405162461bcd60e51b815260206004820152600c60248201526b27b7363c903a32b0b1b432b960a11b6044820152606401610150565b60015f8281526020819052604090205460ff1660028111156102db576102db610387565b146103205760405162461bcd60e51b815260206004820152601560248201527410d95c9d1a599a58d85d19481b9bdd081d985b1a59605a1b6044820152606401610150565b5f81815260208190526040902080546002919060ff19166001830217905550807f33194025c8a6c136730aa3605b006a0e3ae718d032e427d6e8beace8d9c74a4a6002604051610245919061039b565b5f60208284031215610380575f5ffd5b5035919050565b634e487b7160e01b5f52602160045260245ffd5b60208101600383106103bb57634e487b7160e01b5f52602160045260245ffd5b9190529056fea26469706673582212201f50036858bf0472031774f23d635ec57501c509166037936c68fe61231c907864736f6c634300081e0033",
+  "linkReferences": {},
+  "deployedLinkReferences": {},
+  "immutableReferences": {
+    "9": [
+      {
+        "length": 32,
+        "start": 160
+      },
+      {
+        "length": 32,
+        "start": 248
+      },
+      {
+        "length": 32,
+        "start": 603
+      }
+    ]
+  },
+  "inputSourceName": "project/contracts/CertificateRegistry.sol",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "evm": {
+    "gasEstimates": {
+      "creation": {
+        "codeDepositCost": "203000",
+        "executionCost": "infinite",
+        "totalCost": "infinite"
+      },
+      "external": {
+        "getStatus(bytes32)": "2469",
+        "issueCertificate(bytes32)": "infinite",
+        "revokeCertificate(bytes32)": "infinite",
+        "teacher()": "infinite"
+      }
+    }
+  },
+  "metadata": "{\"compiler\":{\"version\":\"0.8.30+commit.73712a01\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"bytes32\",\"name\":\"fileHash\",\"type\":\"bytes32\"},{\"indexed\":false,\"internalType\":\"enum CertificateRegistry.Status\",\"name\":\"newStatus\",\"type\":\"uint8\"}],\"name\":\"CertificateStatusChanged\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"fileHash\",\"type\":\"bytes32\"}],\"name\":\"getStatus\",\"outputs\":[{\"internalType\":\"enum CertificateRegistry.Status\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"fileHash\",\"type\":\"bytes32\"}],\"name\":\"issueCertificate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes32\",\"name\":\"fileHash\",\"type\":\"bytes32\"}],\"name\":\"revokeCertificate\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"teacher\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project/contracts/CertificateRegistry.sol\":\"CertificateRegistry\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"project/contracts/CertificateRegistry.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.30;\\n\\ncontract CertificateRegistry {\\n    enum Status { Unregistered, Valid, Revoked }\\n\\n    address public immutable teacher = msg.sender;\\n    mapping(bytes32 => Status) private statuses;\\n\\n    event CertificateStatusChanged(bytes32 indexed fileHash, Status newStatus);\\n\\n    modifier onlyTeacher() {\\n        require(msg.sender == teacher, \\\"Only teacher\\\");\\n        _;\\n    }\\n\\n    function issueCertificate(bytes32 fileHash) external onlyTeacher {\\n        require(fileHash != bytes32(0), \\\"Zero hash\\\");\\n        require(statuses[fileHash] == Status.Unregistered, \\\"Already registered\\\");\\n        statuses[fileHash] = Status.Valid;\\n        emit CertificateStatusChanged(fileHash, Status.Valid);\\n    }\\n\\n    function revokeCertificate(bytes32 fileHash) external onlyTeacher {\\n        require(statuses[fileHash] == Status.Valid, \\\"Certificate not valid\\\");\\n        statuses[fileHash] = Status.Revoked;\\n        emit CertificateStatusChanged(fileHash, Status.Revoked);\\n    }\\n\\n    function getStatus(bytes32 fileHash) external view returns (Status) {\\n        return statuses[fileHash];\\n    }\\n}\\n\",\"keccak256\":\"0x6a13386665d5becdf416d0f830f5d4254f2e4d9c40476abe006e1b210b4741a6\",\"license\":\"MIT\"}},\"version\":1}",
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 14,
+        "contract": "project/contracts/CertificateRegistry.sol:CertificateRegistry",
+        "label": "statuses",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_mapping(t_bytes32,t_enum(Status)5)"
+      }
+    ],
+    "types": {
+      "t_bytes32": {
+        "encoding": "inplace",
+        "label": "bytes32",
+        "numberOfBytes": "32"
+      },
+      "t_enum(Status)5": {
+        "encoding": "inplace",
+        "label": "enum CertificateRegistry.Status",
+        "numberOfBytes": "1"
+      },
+      "t_mapping(t_bytes32,t_enum(Status)5)": {
+        "encoding": "mapping",
+        "key": "t_bytes32",
+        "label": "mapping(bytes32 => enum CertificateRegistry.Status)",
+        "numberOfBytes": "32",
+        "value": "t_enum(Status)5"
+      }
+    }
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "argsData": "0x",
+  "transaction": {
+    "hash": "0x0ec9fd6279d3997632e179e066f6c1b245ca32fde4b0fcab1043f2923696c747",
+    "nonce": "0x19",
+    "origin": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266"
+  },
+  "receipt": {
+    "blockHash": "0x1b6ce061cca09fb1901ade5fed73f0ecc439f8c90e755ba0f992582aae1d2911",
+    "blockNumber": "0x1a",
+    "transactionIndex": "0x0"
+  }
+}
